@@ -13,7 +13,7 @@ import com.rja.login.R;
 
 public class MainFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private MainViewModel viewModel;
 
     public static MainFragment newInstance() {
         return new MainFragment();
@@ -29,12 +29,12 @@ public class MainFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        // TODO: Use the ViewModel
+        viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
     }
 }
